@@ -1,0 +1,861 @@
+{
+  "generatedAt": "2026-10-27T15:41:47Z",
+  "version": "2.2.0-master",
+  "architectureHorizon": "2026-2040",
+  "totalSkills": 85,
+  "canonicalSkills": 79,
+  "aliasesCount": 6,
+  "categoriesCount": 14,
+  "skills": [
+    {
+      "name": "academic-report-writer",
+      "displayName": "academic-report-writer",
+      "status": "Active Specialist",
+      "description": "Formal technical report writing, academic research papers, mathematical typography (LaTeX), methodology documentation, experimental findings, and publication-ready drafting.",
+      "fileCount": 1,
+      "totalBytes": 4880,
+      "source": "user-config",
+      "category": "Research, Docs & Communication"
+    },
+    {
+      "name": "agy-customizations",
+      "displayName": "agy-customizations",
+      "status": "Platform Core",
+      "description": ">-",
+      "fileCount": 7,
+      "totalBytes": 28857,
+      "source": "builtin",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "ai-agent-architect",
+      "displayName": "ai-agent-architect",
+      "status": "Active Specialist",
+      "description": "Design and implement reliable autonomous AI agents, tool-calling reliability, ReAct reasoning loops, LangGraph state machines, multi-turn error recovery, and evaluation guardrails.",
+      "fileCount": 1,
+      "totalBytes": 5275,
+      "source": "user-config",
+      "category": "Agentic AI & Orchestration"
+    },
+    {
+      "name": "ai-evaluation-safety",
+      "displayName": "ai-evaluation-safety",
+      "status": "Active Specialist",
+      "description": "Design and execute LLM evaluation pipelines, automated red-teaming, prompt injection defenses, bias and toxicity benchmarking, EU AI Act compliance, NIST AI RMF, and safety guardrails.",
+      "fileCount": 1,
+      "totalBytes": 6791,
+      "source": "user-config",
+      "category": "AI Infrastructure & Safety"
+    },
+    {
+      "name": "ai-inference-infrastructure",
+      "displayName": "ai-inference-infrastructure",
+      "status": "Active Specialist",
+      "description": "High-throughput low-latency GPU inference serving, continuous batching, PagedAttention, KV-cache optimization, TensorRT-LLM, vLLM cluster deployment, quantization (FP8/AWQ), and inference latency SLOs.",
+      "fileCount": 1,
+      "totalBytes": 6206,
+      "source": "user-config",
+      "category": "AI Infrastructure & Safety"
+    },
+    {
+      "name": "ai-rag-retrieval-engineering",
+      "displayName": "ai-rag-retrieval-engineering",
+      "status": "Active Specialist",
+      "description": "Advanced Retrieval-Augmented Generation (RAG) with hybrid search (BM25 + Dense vector), cross-encoder re-ranking, semantic chunking, metadata filtering, and hallucination evaluation.",
+      "fileCount": 1,
+      "totalBytes": 17074,
+      "source": "user-config",
+      "category": "Agentic AI & Orchestration"
+    },
+    {
+      "name": "antigravity_guide",
+      "displayName": "antigravity-guide",
+      "status": "Platform Core",
+      "description": "Provides a comprehensive guide, quick reference, and sitemap for Google Antigravity (AGY), including the Antigravity CLI (agy), Antigravity 2.0, Antigravity IDE, Python SDK, slash commands, keybindings, and customizations (skills, rules, MCP, sidecars). Activate this skill when the user asks questions about how to use, configure, or customize Antigravity, AGY, the agy CLI, the Antigravity IDE, or Antigravity 2.0.",
+      "fileCount": 5,
+      "totalBytes": 15022,
+      "source": "builtin",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "appsec-owasp-audit",
+      "displayName": "appsec-owasp-audit",
+      "status": "Master Skill",
+      "description": "Master defensive Application Security (AppSec), OWASP ASVS verification, secure code review, secret scanning, injection mitigation, dependency vulnerability remediation, and defense-in-depth API hardening.",
+      "fileCount": 1,
+      "totalBytes": 5356,
+      "source": "user-config",
+      "category": "Cybersecurity, Privacy & Governance"
+    },
+    {
+      "name": "architecture-system-design-review",
+      "displayName": "architecture-system-design-review",
+      "status": "Active Specialist",
+      "description": "Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.",
+      "fileCount": 1,
+      "totalBytes": 8455,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "ats-resume-optimizer",
+      "displayName": "ats-resume-optimizer",
+      "status": "Active Specialist",
+      "description": "Optimize software engineering resumes against target job descriptions for Applicant Tracking Systems (ATS), keyword frequency matching, Google XYZ impact bullet formatting, and structural readability.",
+      "fileCount": 1,
+      "totalBytes": 5094,
+      "source": "user-config",
+      "category": "Career & Professional Development"
+    },
+    {
+      "name": "cloud-security-hardening",
+      "displayName": "cloud-security-hardening",
+      "status": "Active Specialist",
+      "description": "Cloud security posture management (CSPM), CIS benchmarks, IAM least-privilege policies, secret management with HashiCorp Vault/AWS Secrets Manager, and infrastructure-as-code hardening.",
+      "fileCount": 1,
+      "totalBytes": 4651,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "computer-vision-engineer",
+      "displayName": "computer-vision-engineer",
+      "status": "Active Specialist",
+      "description": "Computer vision engineering with OpenCV, PyTorch Vision, YOLOv8/v11, ONNX Runtime inference, real-time object detection, segmentation, and edge device optimization.",
+      "fileCount": 1,
+      "totalBytes": 5502,
+      "source": "user-config",
+      "category": "AI, ML & Deep Learning"
+    },
+    {
+      "name": "cybersecurity-sast-vulnerability-scan",
+      "displayName": "cybersecurity-sast-vulnerability-scan",
+      "status": "Active Specialist",
+      "description": "Static Application Security Testing (SAST) for code vulnerability",
+      "fileCount": 1,
+      "totalBytes": 14604,
+      "source": "user-config",
+      "category": "Cybersecurity, Privacy & Governance"
+    },
+    {
+      "name": "data-architecture-system-design",
+      "displayName": "data-architecture-system-design",
+      "status": "Active Specialist",
+      "description": "Master database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures (SQL, NoSQL, TimeSeries, Graph). Handles greenfield architecture and zero-downtime migrations. Use PROACTIVELY for data modeling and storage architecture.",
+      "fileCount": 1,
+      "totalBytes": 17147,
+      "source": "user-config",
+      "category": "Backend, APIs & Data Platforms"
+    },
+    {
+      "name": "data-engineering-pipelines",
+      "displayName": "data-engineering-pipelines",
+      "status": "Active Specialist",
+      "description": "Scalable data pipeline architecture, dbt transformations, Apache Iceberg & Delta Lake open table formats, Spark, Flink streaming, Kafka event buses, data contracts, and data mesh governance.",
+      "fileCount": 1,
+      "totalBytes": 6550,
+      "source": "user-config",
+      "category": "Backend, APIs & Data Platforms"
+    },
+    {
+      "name": "database-postgresql-performance-optimization",
+      "displayName": "database-postgresql-performance-optimization",
+      "status": "Active Specialist",
+      "description": "Advanced PostgreSQL 16+ engineering, complex schema design, indexing strategies (B-Tree, GIN, BRIN), query optimization with EXPLAIN ANALYZE, and ACID transactional integrity.",
+      "fileCount": 1,
+      "totalBytes": 4779,
+      "source": "user-config",
+      "category": "Backend, APIs & Data Platforms"
+    },
+    {
+      "name": "design-audit",
+      "displayName": "design-audit",
+      "status": "Master Skill",
+      "description": "Exhaustive UI code audit covering WCAG accessibility, responsive resilience, state completeness, Web Interface Guidelines (Vercel), performance (CLS/LCP/INP), and component consistency. Use when auditing existing screens, preparing a release, or reviewing UI code against best practices.",
+      "fileCount": 1,
+      "totalBytes": 7973,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-colorize",
+      "displayName": "design-colorize",
+      "status": "Active Specialist",
+      "description": "Audit and optimize color palettes, semantic token relationships, dark mode parity, and WCAG contrast. Use when refining branding, adjusting color mood, or fixing low-contrast text.",
+      "fileCount": 1,
+      "totalBytes": 3433,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-critique",
+      "displayName": "design-critique",
+      "status": "Active Specialist",
+      "description": "Aesthetic and ergonomic critique of an interface - visual hierarchy, spacing rhythm, color mood, typography, motion, and cognitive load. Use to identify why a UI feels clumsy, generic, or visually cluttered, and to eliminate AI-generated anti-patterns.",
+      "fileCount": 1,
+      "totalBytes": 5582,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-init",
+      "displayName": "design-init",
+      "status": "Active Specialist",
+      "description": "Initialize and define an intentional visual direction for the active project - design tokens, typography, color system, spacing grid, and design-system.md foundation. Use when starting a new UI feature, establishing a design language, or onboarding a project to a cohesive design system.",
+      "fileCount": 1,
+      "totalBytes": 5104,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-live",
+      "displayName": "design-live",
+      "status": "Active Specialist",
+      "description": "Inspect and refine running applications using real-time browser tooling, live DOM inspection, and visual feedback. Use when fine-tuning an active development server or debugging visual quirks.",
+      "fileCount": 1,
+      "totalBytes": 2832,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-memory",
+      "displayName": "design-memory",
+      "status": "Active Specialist",
+      "description": "Read and persist durable project-specific design decisions into design-system.md. Use at the start of any UI task to retrieve decisions, and at the end of design tasks to record permanent choices.",
+      "fileCount": 1,
+      "totalBytes": 3594,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-polish",
+      "displayName": "design-polish",
+      "status": "Active Specialist",
+      "description": "Apply surgical, high-craft refinements to spacing, borders, alignment, hover states, and micro-interactions without unrelated rewrites. Use when a UI is mostly complete but lacks premium finish.",
+      "fileCount": 1,
+      "totalBytes": 3691,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-prototype",
+      "displayName": "design-prototype",
+      "status": "Active Specialist",
+      "description": "Generate and compare alternative visual directions and component prototypes. Use when exploring design options (e.g. Minimalist vs Bento vs Data-Dense) before committing to implementation.",
+      "fileCount": 1,
+      "totalBytes": 3449,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-review",
+      "displayName": "design-review",
+      "status": "Active Specialist",
+      "description": "Holistic pre-merge UI review covering design-system token compliance, cross-viewport consistency, edge-case stress testing, and sign-off gate. Use before merging UI changes or preparing for production deployment.",
+      "fileCount": 1,
+      "totalBytes": 4318,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-systems-engineer",
+      "displayName": "design-systems-engineer",
+      "status": "Active Specialist",
+      "description": "Architect, implement, and maintain scalable design systems, semantic design tokens (CSS custom properties), atomic components, theme engines (dark mode parity), and Storybook documentation.",
+      "fileCount": 1,
+      "totalBytes": 5778,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-taste-frontend",
+      "displayName": "design-taste-frontend",
+      "status": "Active Specialist",
+      "description": "Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.",
+      "fileCount": 1,
+      "totalBytes": 88459,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-test",
+      "displayName": "design-test",
+      "status": "Active Specialist",
+      "description": "Execute automated visual, interaction, and behavioral tests across user journeys. Use when verifying critical UI flows, responsive layouts, or regression prevention.",
+      "fileCount": 1,
+      "totalBytes": 3232,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "design-typeset",
+      "displayName": "design-typeset",
+      "status": "Active Specialist",
+      "description": "Review and enhance typography - font pairings, text hierarchy, scale ratios, line length, leading, and multilingual support. Use when improving reading ergonomics, fixing typographic inconsistencies, or establishing a new type system.",
+      "fileCount": 1,
+      "totalBytes": 3887,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "devops-ci-cd-github",
+      "displayName": "devops-ci-cd-github",
+      "status": "Active Specialist",
+      "description": "Production GitHub Actions CI/CD workflows, reusable workflows, matrix builds, automated test & lint gates, container publishing, and zero-downtime deployment pipelines.",
+      "fileCount": 1,
+      "totalBytes": 5182,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "docker-containerization",
+      "displayName": "docker-containerization",
+      "status": "Master Skill",
+      "description": "Master production containerization, multi-stage Dockerfiles, minimal distroless/alpine images, non-root security hardening, zero-host-dependency packaging, Docker Compose orchestration, and container health checks.",
+      "fileCount": 1,
+      "totalBytes": 6047,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "edge-ai-tinyml",
+      "displayName": "edge-ai-tinyml",
+      "status": "Active Specialist",
+      "description": "Deploy machine learning models on resource-constrained microcontrollers and edge devices using TinyML, TensorFlow Lite Micro, INT8 post-training quantization, and CMSIS-NN hardware acceleration.",
+      "fileCount": 1,
+      "totalBytes": 5381,
+      "source": "user-config",
+      "category": "Embedded, IoT & Edge Systems"
+    },
+    {
+      "name": "embedded-firmware-c",
+      "displayName": "embedded-firmware-c",
+      "status": "Active Specialist",
+      "description": "Embedded C and firmware engineering for ARM Cortex-M microcontrollers, FreeRTOS task scheduling, hardware register manipulation, SPI/I2C/UART protocols, and deterministic low-power design.",
+      "fileCount": 1,
+      "totalBytes": 5307,
+      "source": "user-config",
+      "category": "Embedded, IoT & Edge Systems"
+    },
+    {
+      "name": "explainable-ai-xai",
+      "displayName": "explainable-ai-xai",
+      "status": "Active Specialist",
+      "description": "Explainable AI (XAI) and model interpretability using SHAP, LIME, Integrated Gradients, feature attribution, model fairness auditing, and bias detection for tabular and deep learning models.",
+      "fileCount": 1,
+      "totalBytes": 5207,
+      "source": "user-config",
+      "category": "AI, ML & Deep Learning"
+    },
+    {
+      "name": "fastapi-pro",
+      "displayName": "fastapi-pro",
+      "status": "Active Specialist",
+      "description": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0 async, and Pydantic V2. Master microservices, WebSockets, background tasks, and OpenAPI 3.1 documentation.",
+      "fileCount": 1,
+      "totalBytes": 4939,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "finops-cloud-cost-engineering",
+      "displayName": "finops-cloud-cost-engineering",
+      "status": "Active Specialist",
+      "description": "Cloud financial operations (FinOps), FOCUS framework compliance, compute rightsizing, Reserved/Spot Instance optimization, storage tiering, architectural unit cost economics, and real-time anomaly alerting.",
+      "fileCount": 1,
+      "totalBytes": 5917,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "frontend-apple-design-system",
+      "displayName": "frontend-apple-design-system",
+      "status": "Active Specialist",
+      "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+      "fileCount": 1,
+      "totalBytes": 23339,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-craft-design-engineering",
+      "displayName": "frontend-craft-design-engineering",
+      "status": "Master Skill",
+      "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks.",
+      "fileCount": 62,
+      "totalBytes": 2237614,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-interaction-design-polish",
+      "displayName": "frontend-interaction-design-polish",
+      "status": "Active Specialist",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+      "fileCount": 1,
+      "totalBytes": 27813,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-interface-design-system",
+      "displayName": "frontend-interface-design-system",
+      "status": "Active Specialist",
+      "description": "Craft-first interface design for dashboards, admin panels, SaaS apps, tools, settings pages, data interfaces, and interactive products. Use when designing, building, reviewing, auditing, or refining product UI where visual craft, layout hierarchy, tokens, states, visual direction, or design-system consistency matter. Not for marketing pages, landing pages, campaigns, or brand-only work.",
+      "fileCount": 2,
+      "totalBytes": 30255,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-minimalist-ui-design",
+      "displayName": "frontend-minimalist-ui-design",
+      "status": "Active Specialist",
+      "description": "Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows.",
+      "fileCount": 1,
+      "totalBytes": 7999,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-shadcn-component-library",
+      "displayName": "frontend-shadcn-component-library",
+      "status": "Active Specialist",
+      "description": "Manages shadcn components and projects \u2014 adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", \"switch to --preset\", and for building a design system or applying a DESIGN.md or brand spec to shadcn/ui.",
+      "fileCount": 21,
+      "totalBytes": 152251,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-ui-animation-design",
+      "displayName": "frontend-ui-animation-design",
+      "status": "Active Specialist",
+      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right \u2014 should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+      "fileCount": 2,
+      "totalBytes": 21764,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-ui-edge-case-testing",
+      "displayName": "frontend-ui-edge-case-testing",
+      "status": "Active Specialist",
+      "description": "Try to break a piece of UI by feeding it worst-case data \u2014 long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers \u2014 then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
+      "fileCount": 2,
+      "totalBytes": 22976,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-ui-ux-intelligence",
+      "displayName": "frontend-ui-ux-intelligence",
+      "status": "Active Specialist",
+      "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.",
+      "fileCount": 76,
+      "totalBytes": 3824114,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-visual-design-system",
+      "displayName": "frontend-visual-design-system",
+      "status": "Active Specialist",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "fileCount": 2,
+      "totalBytes": 19822,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "frontend-web-interface-guidelines",
+      "displayName": "frontend-web-interface-guidelines",
+      "status": "Consolidated Alias -> design-audit",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\". [Consolidated Master Skill: design-audit]",
+      "fileCount": 1,
+      "totalBytes": 1872,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "generative_ui",
+      "displayName": "generative_ui",
+      "status": "Active Specialist",
+      "description": "How to render rich interactive HTML widgets inline in the chat or as standalone artifacts. Use this skill when you want to show the user diagrams, data visualizations, interactive controls, educational walkthroughs, or any rich visual content beyond plain text and markdown.",
+      "fileCount": 1,
+      "totalBytes": 5650,
+      "source": "builtin",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "git-release-prep",
+      "displayName": "git-release-prep",
+      "status": "Active Specialist",
+      "description": "Semantic versioning, changelog generation, clean git branching, PR reviews, merge conflict resolution, and release tagging. Use when preparing releases, managing git branches, or writing release notes.",
+      "fileCount": 1,
+      "totalBytes": 4043,
+      "source": "user-config",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "github-portfolio-analyst",
+      "displayName": "github-portfolio-analyst",
+      "status": "Active Specialist",
+      "description": "Comprehensive GitHub profile and open-source portfolio auditing, README storytelling, code quality assessments, contribution graph strategy, and personalized career roadmaps.",
+      "fileCount": 1,
+      "totalBytes": 5833,
+      "source": "user-config",
+      "category": "Career & Professional Development"
+    },
+    {
+      "name": "image-generate",
+      "displayName": "image-generate",
+      "status": "Master Skill",
+      "description": "Professional AI image generation, programmatic graphics, multi-format conversion, and quality engineering workflow named \"image generate using coding\". Strictly adheres to zero-local-installation policy (no model weight downloads, no package installations). Supports native Antigravity tools, free hosted inference, SVG-to-PNG rasterization, WebP, raster-in-svg honesty, and automated validation.",
+      "fileCount": 9,
+      "totalBytes": 194311,
+      "source": "user-config",
+      "category": "AI, ML & Deep Learning"
+    },
+    {
+      "name": "java-modern",
+      "displayName": "java-modern",
+      "status": "Active Specialist",
+      "description": "Master Java 21+ and Java 25 modern features including Virtual Threads (Project Loom), Pattern Matching, Record patterns, Spring Boot 3.x, and high-throughput backend services.",
+      "fileCount": 1,
+      "totalBytes": 5080,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "local-llm-integration",
+      "displayName": "local-llm-integration",
+      "status": "Active Specialist",
+      "description": "Integrate, serve, and benchmark local open-weight language models using Ollama, vLLM, and llama.cpp. Master GGUF quantization, hardware acceleration, streaming responses, and OpenAI-compatible API adapters.",
+      "fileCount": 1,
+      "totalBytes": 5548,
+      "source": "user-config",
+      "category": "AI, ML & Deep Learning"
+    },
+    {
+      "name": "mcp-server-developer",
+      "displayName": "mcp-server-developer",
+      "status": "Active Specialist",
+      "description": "Develop, debug, and publish Model Context Protocol (MCP) servers using TypeScript or Python SDKs. Implement Tools, Resources, Prompts, JSON-RPC 2.0 protocol handlers, stdio and SSE transports.",
+      "fileCount": 1,
+      "totalBytes": 6188,
+      "source": "user-config",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "migrate-workflows",
+      "displayName": "migrate-workflows",
+      "status": "Active Specialist",
+      "description": "Automatically migrate legacy workflows to modern skills across global and workspace configurations. Scans for existing workflows, creates target SKILL.md files, and safely archives old workflow files.",
+      "fileCount": 1,
+      "totalBytes": 6039,
+      "source": "builtin",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "mobile-flutter-application-engineering",
+      "displayName": "mobile-flutter-application-engineering",
+      "status": "Active Specialist",
+      "description": "Flutter 3.x and Dart 3 mobile development, Riverpod 2.x reactive state management, Impeller rendering engine optimization, Android platform channel integration, and ADB mobile device testing.",
+      "fileCount": 1,
+      "totalBytes": 15224,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "modern-cpp",
+      "displayName": "modern-cpp",
+      "status": "Active Specialist",
+      "description": "Idiomatic modern C++20 and C++23 engineering, RAII memory safety, smart pointers, ranges, concepts, CMake builds, and valgrind/ASan memory leak prevention.",
+      "fileCount": 1,
+      "totalBytes": 4740,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "multi-agent-orchestration",
+      "displayName": "multi-agent-orchestration",
+      "status": "Active Specialist",
+      "description": "Multi-agent coordination topologies (hierarchical supervisor, swarm, peer-to-peer), LangGraph state graphs, AutoGen, CrewAI, inter-agent communication protocols, task delegation, and conflict resolution.",
+      "fileCount": 1,
+      "totalBytes": 7736,
+      "source": "user-config",
+      "category": "Agentic AI & Orchestration"
+    },
+    {
+      "name": "node-typescript-pro",
+      "displayName": "node-typescript-pro",
+      "status": "Active Specialist",
+      "description": "Modern Node.js 22+ and TypeScript 5+ full-stack and backend engineering, native ESM modules, strict type-safety, Vitest unit testing, and high-performance async workflows.",
+      "fileCount": 1,
+      "totalBytes": 4746,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "permissioned-github",
+      "displayName": "permissioned-github",
+      "status": "Platform Core",
+      "description": "Guidelines for interacting with GitHub and request permissions from the user when commands fail due to restrictions in the agent environment.",
+      "fileCount": 1,
+      "totalBytes": 5565,
+      "source": "builtin",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "platform-engineering",
+      "displayName": "platform-engineering",
+      "status": "Active Specialist",
+      "description": "Architect and operate Internal Developer Platforms (IDPs), Backstage service catalogs, self-service infrastructure APIs, golden paths, developer experience (DevEx) metrics, DORA tracking, and platform orchestration.",
+      "fileCount": 1,
+      "totalBytes": 6505,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "privacy-engineering",
+      "displayName": "privacy-engineering",
+      "status": "Active Specialist",
+      "description": "Privacy-by-design architecture, automated PII discovery and masking, differential privacy, synthetic data generation, GDPR/CCPA/DPDP regulatory compliance, cryptographic anonymization, and Privacy Impact Assessments (PIAs).",
+      "fileCount": 1,
+      "totalBytes": 6548,
+      "source": "user-config",
+      "category": "Cybersecurity, Privacy & Governance"
+    },
+    {
+      "name": "python-pro",
+      "displayName": "python-pro",
+      "status": "Active Specialist",
+      "description": "Master Python 3.12+ and Python 3.13 features, modern type hinting (PEP 695 type parameter syntax), async/await concurrency, high-performance package management with uv, and pytest suites.",
+      "fileCount": 1,
+      "totalBytes": 4675,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "quantum-computing-readiness",
+      "displayName": "quantum-computing-readiness",
+      "status": "Active Specialist",
+      "description": "Post-Quantum Cryptography (PQC) migration, NIST PQC standards (FIPS 203 ML-KEM/Kyber, FIPS 204 ML-DSA/Dilithium, FIPS 205 SLH-DSA/SPHINCS+), cryptographic inventory scanning, hybrid classical-quantum TLS, and harvest-now-decrypt-later defense.",
+      "fileCount": 1,
+      "totalBytes": 7111,
+      "source": "user-config",
+      "category": "Cybersecurity, Privacy & Governance"
+    },
+    {
+      "name": "react-nextjs-pro",
+      "displayName": "react-nextjs-pro",
+      "status": "Active Specialist",
+      "description": "Modern React 19 and Next.js 15 App Router architecture, React Server Components (RSC), Server Actions, TanStack Query, optimistic UI updates, streaming SSR, and edge performance.",
+      "fileCount": 1,
+      "totalBytes": 5261,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "repo-audit",
+      "displayName": "repo-audit",
+      "status": "Master Skill",
+      "description": "Master 360-degree repository audit, architecture reconstruction, dependency vulnerability scanning, license compliance, code hygiene, and prioritized technical debt remediation ledger (P0-P3).",
+      "fileCount": 1,
+      "totalBytes": 4826,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "reproducible-data-science",
+      "displayName": "reproducible-data-science",
+      "status": "Active Specialist",
+      "description": "Reproducible data science workflows, converting Jupyter notebooks to tested Python modules, deterministic random seeds, dataset schema validation with Great Expectations/Pydantic, and pipeline automation.",
+      "fileCount": 1,
+      "totalBytes": 5305,
+      "source": "user-config",
+      "category": "Data Science & Scientific Computing"
+    },
+    {
+      "name": "reverse-engineer-anything",
+      "displayName": "reverse-engineer-anything",
+      "status": "Active Specialist",
+      "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA. Use shipped-artifact or requested runtime evidence to explain features, compare versions, decompile code, or guide a reconstruction. Skip REA for ordinary source-repository architecture analysis.",
+      "fileCount": 7,
+      "totalBytes": 117800,
+      "source": "user-config",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "root-cause-debugging",
+      "displayName": "root-cause-debugging",
+      "status": "Master Skill",
+      "description": "Systematic hypothesis-driven root-cause debugging, AST-level trace analysis, minimal surgical patching, zero-collateral-edits enforcement, and regression test verification.",
+      "fileCount": 1,
+      "totalBytes": 4625,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "secure-coding-review",
+      "displayName": "secure-coding-review",
+      "status": "Consolidated Alias -> appsec-owasp-audit",
+      "description": "Static analysis, OWASP Top 10 mitigation, secret scanning, SQLi/XSS/SSRF prevention, and least-privilege verification. Use when reviewing code for security vulnerabilities, conducting PR audits, or hardening endpoints. [Consolidated Master Skill: appsec-owasp-audit]",
+      "fileCount": 1,
+      "totalBytes": 1817,
+      "source": "user-config",
+      "category": "Cybersecurity, Privacy & Governance"
+    },
+    {
+      "name": "site-reliability-sre",
+      "displayName": "site-reliability-sre",
+      "status": "Active Specialist",
+      "description": "Site Reliability Engineering (SRE), Service Level Indicators (SLIs), Service Level Objectives (SLOs), error budgets, Prometheus metrics, Grafana alerting rules, and blameless incident postmortems.",
+      "fileCount": 1,
+      "totalBytes": 4880,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "software-api-documentation-openapi",
+      "displayName": "software-api-documentation-openapi",
+      "status": "Active Specialist",
+      "description": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals. Use PROACTIVELY for API documentation or developer portal creation.",
+      "fileCount": 1,
+      "totalBytes": 8177,
+      "source": "user-config",
+      "category": "Backend, APIs & Data Platforms"
+    },
+    {
+      "name": "software-code-review-quality",
+      "displayName": "software-code-review-quality",
+      "status": "Active Specialist",
+      "description": "Master software code review expert specializing in modern AI-assisted code analysis, security auditing, performance profiling, and production reliability aligned with 2026\u20132035 engineering standards. Use PROACTIVELY for PR and code quality assurance.",
+      "fileCount": 1,
+      "totalBytes": 8814,
+      "source": "user-config",
+      "category": "Software Engineering & Languages"
+    },
+    {
+      "name": "task-decomposition",
+      "displayName": "task-decomposition",
+      "status": "Active Specialist",
+      "description": "Breaking down complex user epics and software objectives into atomic, testable, and dependency-ordered implementation stages. Use when starting large engineering tasks or structuring complex multi-file changes.",
+      "fileCount": 1,
+      "totalBytes": 3797,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "task-deployable-dockerize",
+      "displayName": "task-deployable-dockerize",
+      "status": "Consolidated Alias -> docker-containerization",
+      "description": "Convert an existing arbitrary software project into a self-contained, reproducible, and deployable Dockerized application with zero host dependency requirements. [Consolidated Master Skill: docker-containerization]",
+      "fileCount": 1,
+      "totalBytes": 1717,
+      "source": "user-config",
+      "category": "Cloud, DevOps & Platform Engineering"
+    },
+    {
+      "name": "task-full-repo-audit",
+      "displayName": "task-full-repo-audit",
+      "status": "Consolidated Alias -> repo-audit",
+      "description": "Execute a complete 360-degree repository audit covering architecture, code hygiene, security vulnerabilities, test coverage, outdated dependencies, and technical debt with an actionable remediation ledger. [Consolidated Master Skill: repo-audit]",
+      "fileCount": 1,
+      "totalBytes": 1638,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "task-surgical-bugfix",
+      "displayName": "task-surgical-bugfix",
+      "status": "Consolidated Alias -> root-cause-debugging",
+      "description": "Fix a specific software bug with minimal, targeted changes without any collateral refactoring, unintended behavioral modifications, or stylistic disruption. [Consolidated Master Skill: root-cause-debugging]",
+      "fileCount": 1,
+      "totalBytes": 1636,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "task-ui-redesign-isolated",
+      "displayName": "task-ui-redesign-isolated",
+      "status": "Consolidated Alias -> frontend-craft-design-engineering",
+      "description": "Redesign and elevate an existing user interface without modifying underlying business logic, state management, API contracts, or data flow. [Consolidated Master Skill: frontend-craft-design-engineering]",
+      "fileCount": 1,
+      "totalBytes": 1761,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "tech-interview-coach",
+      "displayName": "tech-interview-coach",
+      "status": "Active Specialist",
+      "description": "Comprehensive technical interview preparation covering Data Structures & Algorithms (DSA), System Design tradeoffs, Behavioral interview mastery with the STAR method, and live coding assessment drills.",
+      "fileCount": 1,
+      "totalBytes": 6139,
+      "source": "user-config",
+      "category": "Career & Professional Development"
+    },
+    {
+      "name": "technical-researcher",
+      "displayName": "technical-researcher",
+      "status": "Active Specialist",
+      "description": "Conduct rigorous technical research, literature reviews, primary source verification, academic citation (APA/BibTeX), benchmark evaluation, and technology radar assessments.",
+      "fileCount": 1,
+      "totalBytes": 4763,
+      "source": "user-config",
+      "category": "Research, Docs & Communication"
+    },
+    {
+      "name": "testing-playwright-browser-automation",
+      "displayName": "testing-playwright-browser-automation",
+      "status": "Active Specialist",
+      "description": "Resilient browser automation and E2E testing with Playwright, robust role-based locators, visual regression testing, network request intercept/mocking, and headless scraping.",
+      "fileCount": 1,
+      "totalBytes": 9075,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "testing-unit-test-generation",
+      "displayName": "testing-unit-test-generation",
+      "status": "Active Specialist",
+      "description": "Generate comprehensive, maintainable unit tests across languages with strong coverage and edge case focus.",
+      "fileCount": 1,
+      "totalBytes": 10721,
+      "source": "user-config",
+      "category": "Testing, Debugging & Quality"
+    },
+    {
+      "name": "web-accessibility-wcag",
+      "displayName": "web-accessibility-wcag",
+      "status": "Active Specialist",
+      "description": "Web accessibility audit and remediation conforming to WCAG 2.2 AA/AAA, WAI-ARIA role patterns, screen reader navigation, keyboard trap prevention, and automated axe-core testing.",
+      "fileCount": 1,
+      "totalBytes": 6135,
+      "source": "user-config",
+      "category": "Frontend, UI/UX & Creative"
+    },
+    {
+      "name": "workflow-automation-scripting",
+      "displayName": "workflow-automation-scripting",
+      "status": "Active Specialist",
+      "description": "Automated repetitive workflows, batch document processing, Excel/CSV spreadsheet manipulation, headless API pipelines, and cross-platform scripting in Node.js and Python.",
+      "fileCount": 1,
+      "totalBytes": 5734,
+      "source": "user-config",
+      "category": "Developer Tools & Automation"
+    },
+    {
+      "name": "writing-humanizer-prose-polish",
+      "displayName": "writing-humanizer-prose-polish",
+      "status": "Active Specialist",
+      "description": ">-",
+      "fileCount": 6,
+      "totalBytes": 71517,
+      "source": "user-config",
+      "category": "Research, Docs & Communication"
+    }
+  ]
+}

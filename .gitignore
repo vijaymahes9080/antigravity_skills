@@ -1,0 +1,24 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary & Build outputs
+scratch/
+tmp/
+*.log
+.system_generated/
+
+# Sensitive files defense
+*.pem
+*.key
+*.env
+*.env.*
+config.json
+mcp_config.json

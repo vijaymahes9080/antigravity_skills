@@ -1,0 +1,47 @@
+name: Validate Antigravity Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Verify 85 Skills Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Integrity Audit
+        run: |
+          python -c "
+          import os, re, json
+
+          skills_dir = 'skills'
+          dirs = [d for d in os.listdir(skills_dir) if os.path.isdir(os.path.join(skills_dir, d))]
+          print(f'Total skills found: {len(dirs)}')
+          assert len(dirs) == 85, f'Expected 85 skills, found {len(dirs)}'
+
+          for d in dirs:
+              skill_md = os.path.join(skills_dir, d, 'SKILL.md')
+              assert os.path.isfile(skill_md), f'Missing SKILL.md in {d}'
+              with open(skill_md, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              assert content.startswith('---'), f'Missing frontmatter start in {d}'
+              assert re.search(r'^name:\s*.+$', content, re.M), f'Missing name in {d}'
+              assert re.search(r'^description:\s*.+$', content, re.M), f'Missing description in {d}'
+
+          with open('skills_manifest.json', 'r', encoding='utf-8') as f:
+              manifest = json.load(f)
+          assert manifest['totalSkills'] == 85, 'Manifest totalSkills mismatch'
+          assert len(manifest['skills']) == 85, 'Manifest skills array length mismatch'
+
+          print('All 85 skills passed validation perfectly!')
+          "
