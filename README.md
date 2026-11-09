@@ -1,4 +1,4 @@
-﻿# Universal Antigravity Skills Collection (2026–2040)
+# Universal Antigravity Skills Collection (2026–2040)
 
 [![Skills Count](https://img.shields.io/badge/Skills-90%20Active-brightgreen.svg)](#architecture-overview)
 [![Categories](https://img.shields.io/badge/Taxonomy-14%20Domains-blue.svg)](#14-category-taxonomy)

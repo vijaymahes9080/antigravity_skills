@@ -222,3 +222,4 @@ if __name__ == "__main__":
         data = json.load(f)
     res = build_pdf(data, args.out)
     print(f"SUCCESS: Generated PDF at {res}")
+

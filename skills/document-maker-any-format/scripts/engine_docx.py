@@ -209,3 +209,4 @@ if __name__ == "__main__":
         spec_data = json.load(f)
     out_file = build_docx(spec_data, args.out)
     print(f"SUCCESS: Generated DOCX at {out_file}")
+

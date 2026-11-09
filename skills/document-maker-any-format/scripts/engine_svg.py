@@ -103,3 +103,4 @@ if __name__ == "__main__":
         data = json.load(f)
     res = build_architecture_svg(data, args.out)
     print(f"SUCCESS: Generated SVG at {res}")
+

@@ -10,3 +10,4 @@
 | Vector Graphics | `.svg` | `scripts/engine_svg.py` | Vector Native | Architecture diagrams, infographics, visual workflows |
 | Rich Text Format | `.rtf` | `scripts/engine_docx.py` / RTF stream | Cross-platform | Legacy system exports, universal text interchange |
 | Markdown Text | `.md` | Python core | Plain text | Developer documentation, GitHub READMEs |
+

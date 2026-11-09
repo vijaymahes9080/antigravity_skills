@@ -40,3 +40,4 @@ Any of the following causes immediate task failure until auto-repaired:
 | `DEF-005` | Low contrast text on dark background | Automatically elevate text brightness or swap fill color to guarantee $\ge 4.5:1$ contrast ratio. |
 | `DEF-006` | Formula syntax error in spreadsheet | Correct cell coordinate reference; wrap in `=IFERROR(..., 0)` to prevent `#REF!` or `#DIV/0!`. |
 | `DEF-007` | Broken image aspect ratio | Constrain image dimensions maintaining natural width/height ratio; never stretch or skew. |
+

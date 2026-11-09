@@ -62,3 +62,4 @@ For thesis, seminar, and project reports:
    - Chapter 4: Experimental Evaluation & Results
    - Chapter 5: Conclusion & Future Scope
 8. **References**: Formal IEEE format `[1] Author, "Title", Journal/Conf, Year.`
+

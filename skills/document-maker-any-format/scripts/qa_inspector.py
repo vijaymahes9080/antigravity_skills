@@ -181,3 +181,4 @@ if __name__ == "__main__":
     rep = generate_qa_report(result, args.out_report)
     print(f"Inspection Result: {result['status']} (Score: {result['score']}/100)")
     print(f"Report saved to: {rep}")
+

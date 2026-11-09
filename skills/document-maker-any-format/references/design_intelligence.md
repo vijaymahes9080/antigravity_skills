@@ -92,3 +92,4 @@ This guide details the 12 primary visual design archetypes used by `document-mak
 | **Body Text** | 10.5–11pt | Regular | 1.2–1.3x | No | 0pt / 6pt |
 | **Table Cells** | 9–10pt | Regular | 1.1x | No | 2pt / 2pt |
 | **Captions / Footnotes** | 8.5–9pt | Italic | 1.1x | No | 4pt / 4pt |
+

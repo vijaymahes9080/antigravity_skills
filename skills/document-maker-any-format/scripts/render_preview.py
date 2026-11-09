@@ -67,3 +67,4 @@ if __name__ == "__main__":
 
     preview = render_preview_summary(args.file, args.outdir)
     print(f"SUCCESS: Rendered preview at {preview}")
+

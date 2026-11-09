@@ -224,3 +224,4 @@ if __name__ == "__main__":
         data = json.load(f)
     res = build_html(data, args.out)
     print(f"SUCCESS: Generated HTML at {res}")
+
