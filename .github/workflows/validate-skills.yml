@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate:
-    name: Verify 85 Skills Integrity
+    name: Verify 90 Skills Integrity
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -27,7 +27,7 @@ jobs:
           skills_dir = 'skills'
           dirs = [d for d in os.listdir(skills_dir) if os.path.isdir(os.path.join(skills_dir, d))]
           print(f'Total skills found: {len(dirs)}')
-          assert len(dirs) == 85, f'Expected 85 skills, found {len(dirs)}'
+          assert len(dirs) == 90, f'Expected 90 skills, found {len(dirs)}'
 
           for d in dirs:
               skill_md = os.path.join(skills_dir, d, 'SKILL.md')
@@ -40,8 +40,10 @@ jobs:
 
           with open('skills_manifest.json', 'r', encoding='utf-8') as f:
               manifest = json.load(f)
-          assert manifest['totalSkills'] == 85, 'Manifest totalSkills mismatch'
-          assert len(manifest['skills']) == 85, 'Manifest skills array length mismatch'
+          tot = manifest['totalSkills']
+          sk_len = len(manifest['skills'])
+          assert tot == 90, f'Manifest totalSkills mismatch: {tot}'
+          assert sk_len == 90, f'Manifest skills array length mismatch: {sk_len}'
 
-          print('All 85 skills passed validation perfectly!')
+          print('All 90 skills passed validation perfectly!')
           "

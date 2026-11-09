@@ -22,3 +22,9 @@ tmp/
 *.env.*
 config.json
 mcp_config.json
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+document-maker-output/
