@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Autonomous AI Infrastructure FY2027",
+    "subtitle": "Global Enterprise Architecture & Strategic Roadmap",
+    "author": "Chief Technology Office",
+    "organization": "Enterprise AI Systems",
+    "date": "November 2026",
+    "format": "pptx"
+  },
+  "design": {
+    "archetype": "premium_business",
+    "primary_color": "064E3B",
+    "secondary_color": "047857",
+    "accent_color": "D97706"
+  },
+  "content": {
+    "slides": [
+      {
+        "type": "title",
+        "title": "Autonomous AI Infrastructure FY2027",
+        "subtitle": "Global Enterprise Architecture & Strategic Roadmap"
+      },
+      {
+        "type": "cards",
+        "category": "STRATEGIC FOUNDATION",
+        "title": "Core Engineering Pillars",
+        "cards": [
+          {
+            "header": "Zero-Latency Serving",
+            "body": "Continuous batching and PagedAttention across decentralized edge nodes."
+          },
+          {
+            "header": "Deterministic Guardrails",
+            "body": "Multi-lens evaluators enforcing OWASP LLM and EU AI Act compliance."
+          },
+          {
+            "header": "Autonomous Synthesis",
+            "body": "Multi-format publication pipeline with self-healing defect correction."
+          }
+        ]
+      },
+      {
+        "type": "stats",
+        "category": "PERFORMANCE METRICS",
+        "title": "Key Telemetry Milestones",
+        "cards": [
+          {
+            "stat": "99.98%",
+            "header": "System Availability",
+            "body": "Multi-region failover"
+          },
+          {
+            "stat": "38ms",
+            "header": "P95 TTFT Latency",
+            "body": "Optimized KV-cache"
+          },
+          {
+            "stat": "4.8x",
+            "header": "Throughput Scaling",
+            "body": "FP8 quantization gain"
+          }
+        ]
+      },
+      {
+        "type": "conclusion",
+        "title": "Strategic Next Steps",
+        "bullets": [
+          "Complete Phase 3 global multi-cluster deployment by Q1 2027.",
+          "Expand automated visual QA scoring across all internal enterprise workflows.",
+          "Publish formal open-source benchmarks and developer documentation."
+        ]
+      }
+    ]
+  }
+}

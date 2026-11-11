@@ -1,0 +1,4 @@
+{"navy":["0F2747","F2A900","F5F7FA"],"teal":["0B3C49","2EC4B6","F0F7F7"],"plum":["3B1F4B","FF6B6B","F8F4FA"],"forest":["1B4332","D4A373","F4F8F5"],"charcoal":["22252B","00B894","F4F5F7"],"royal":["1E3A8A","F97316","EFF4FF"],"crimson":["7F1D1D","FACC15","FEF6F6"],
+"semantic":{"good":"16A34A","warn":"F59E0B","bad":"DC2626","info":"2563EB","muted":"6B7280"},
+"dataviz_categorical":["1F77B4","FF7F0E","2CA02C","D62728","9467BD","8C564B"],
+"colorblind_safe":["0072B2","E69F00","009E73","D55E00","CC79A7","56B4E9"]}

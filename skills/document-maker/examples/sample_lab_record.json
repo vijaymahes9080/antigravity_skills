@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Data Structures & Algorithms Laboratory",
+    "subtitle": "Department of Computer Science & Engineering",
+    "author": "Vijay (Roll No: 2026-CS-042)",
+    "organization": "National Institute of Technology",
+    "date": "10-11-2026",
+    "format": "docx"
+  },
+  "design": {
+    "archetype": "educational_instructional",
+    "primary_color": "2563EB",
+    "secondary_color": "059669",
+    "accent_color": "F59E0B"
+  },
+  "content": {
+    "educational": {
+      "experiment_no": "04",
+      "aim": "To implement and analyze the performance of Dijkstra's Single Source Shortest Path Algorithm on weighted directed graphs using a min-heap priority queue.",
+      "system_requirements": [
+        "Hardware: Intel Core i7 / 16 GB RAM",
+        "Operating System: Ubuntu 24.04 LTS / Windows 11",
+        "Runtime: Python 3.12.x / GCC 13.2"
+      ],
+      "algorithm": [
+        "Initialize distance array with infinity for all vertices except source vertex set to 0.",
+        "Insert (0, source) into min-heap priority queue.",
+        "While priority queue is non-empty, extract vertex with minimum distance.",
+        "For each adjacent vertex, perform relaxation: if dist[u] + weight(u, v) < dist[v], update dist[v] and push to priority queue.",
+        "Repeat until all reachable vertices are settled. Print shortest path matrix."
+      ],
+      "code": "import heapq\n\ndef dijkstra(graph, source):\n    dist = {v: float('inf') for v in graph}\n    dist[source] = 0\n    pq = [(0, source)]\n    while pq:\n        d, u = heapq.heappop(pq)\n        if d > dist[u]:\n            continue\n        for v, weight in graph[u]:\n            if dist[u] + weight < dist[v]:\n                dist[v] = dist[u] + weight\n                heapq.heappush(pq, (dist[v], v))\n    return dist\n\n# Driver execution\ng = {'A': [('B', 4), ('C', 2)], 'B': [('C', 1), ('D', 5)], 'C': [('D', 8), ('E', 10)], 'D': [('E', 2)], 'E': []}\nprint('Shortest distances from source A:', dijkstra(g, 'A'))",
+      "sample_input": "Graph: 5 Vertices (A, B, C, D, E), Source = 'A'",
+      "sample_output": "Shortest distances from source A: {'A': 0, 'B': 4, 'C': 2, 'D': 9, 'E': 11}",
+      "result_and_inference": "Dijkstra's shortest path algorithm was successfully implemented and verified with time complexity O((V + E) log V). The computed shortest path lengths matched the theoretical optimal bounds without deviation."
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterDocumentSpec",
+  "description": "Unified specification schema for Master Document Maker studio covering all enterprise formats.",
+  "type": "object",
+  "required": ["metadata", "design", "content"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "format"],
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "author": { "type": "string" },
+        "organization": { "type": "string" },
+        "date": { "type": "string" },
+        "version": { "type": "string" },
+        "classification": { "type": "string", "enum": ["Confidential", "Internal", "Public", "Proprietary", "Official"] },
+        "format": {
+          "type": "string",
+          "enum": ["docx", "pptx", "xlsx", "pdf", "rtf", "html", "svg", "md", "txt"]
+        },
+        "page_size": { "type": "string", "enum": ["A4", "LETTER", "LEGAL"], "default": "A4" },
+        "orientation": { "type": "string", "enum": ["portrait", "landscape"], "default": "portrait" }
+      }
+    },
+    "design": {
+      "type": "object",
+      "required": ["archetype"],
+      "properties": {
+        "archetype": {
+          "type": "string",
+          "enum": [
+            "modern_corporate",
+            "minimalist_editorial",
+            "academic_scientific",
+            "premium_business",
+            "technology_futuristic",
+            "creative_experimental",
+            "government_institutional",
+            "engineering_technical",
+            "educational_instructional",
+            "magazine_publication",
+            "luxury_hospitality",
+            "data_analytical"
+          ]
+        },
+        "primary_color": { "type": "string" },
+        "secondary_color": { "type": "string" },
+        "accent_color": { "type": "string" },
+        "bg_color": { "type": "string" },
+        "font_family": { "type": "string" }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "abstract": { "type": "string" },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title"],
+            "properties": {
+              "title": { "type": "string" },
+              "level": { "type": "integer", "default": 1 },
+              "paragraphs": { "type": "array", "items": { "type": "string" } },
+              "callout": { "type": "string" },
+              "callout_type": { "type": "string", "enum": ["info", "warning", "tip", "important"], "default": "info" },
+              "bullet_points": { "type": "array", "items": { "type": "string" } },
+              "table": {
+                "type": "object",
+                "properties": {
+                  "caption": { "type": "string" },
+                  "headers": { "type": "array", "items": { "type": "string" } },
+                  "rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } }
+                }
+              },
+              "code_block": {
+                "type": "object",
+                "properties": {
+                  "language": { "type": "string" },
+                  "code": { "type": "string" }
+                }
+              },
+              "image_path": { "type": "string" },
+              "image_caption": { "type": "string" }
+            }
+          }
+        },
+        "slides": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "title"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["title", "cards", "stats", "split", "table", "timeline", "conclusion", "custom"]
+              },
+              "category": { "type": "string" },
+              "title": { "type": "string" },
+              "subtitle": { "type": "string" },
+              "bullets": { "type": "array", "items": { "type": "string" } },
+              "cards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "header": { "type": "string" },
+                    "body": { "type": "string" },
+                    "stat": { "type": "string" }
+                  }
+                }
+              },
+              "table": {
+                "type": "object",
+                "properties": {
+                  "headers": { "type": "array", "items": { "type": "string" } },
+                  "rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } }
+                }
+              },
+              "notes": { "type": "string" }
+            }
+          }
+        },
+        "sheets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "freeze_panes": { "type": "string", "default": "A2" },
+              "tables": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "headers", "rows"],
+                  "properties": {
+                    "title": { "type": "string" },
+                    "headers": { "type": "array", "items": { "type": "string" } },
+                    "rows": {
+                      "type": "array",
+                      "items": { "type": "array", "items": {} }
+                    },
+                    "summary_row": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "column_formats": {
+                      "type": "array",
+                      "items": { "type": "string", "enum": ["text", "currency", "percentage", "integer", "decimal"] }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "educational": {
+          "type": "object",
+          "properties": {
+            "experiment_no": { "type": "string" },
+            "aim": { "type": "string" },
+            "system_requirements": { "type": "array", "items": { "type": "string" } },
+            "algorithm": { "type": "array", "items": { "type": "string" } },
+            "code": { "type": "string" },
+            "sample_input": { "type": "string" },
+            "sample_output": { "type": "string" },
+            "result_and_inference": { "type": "string" }
+          }
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "target_score": { "type": "integer", "default": 90 },
+        "require_preview": { "type": "boolean", "default": true },
+        "strict_mode": { "type": "boolean", "default": false }
+      }
+    }
+  }
+}

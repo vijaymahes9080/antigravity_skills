@@ -1,0 +1,69 @@
+{
+ "file": "design_showcase",
+ "preset": "teal",
+ "title": "Design Showcase",
+ "footer": "Design Showcase",
+ "slides": [
+  {
+   "type": "title",
+   "title": "Design that Persuades",
+   "subtitle": "Hierarchy. Contrast. Rhythm."
+  },
+  {
+   "type": "quote",
+   "title": "Principle",
+   "quote": "Design is not decoration; it is the structure of understanding.",
+   "by": "Design maxim"
+  },
+  {
+   "type": "compare",
+   "title": "Before vs After",
+   "cols": [
+    {
+     "head": "Before",
+     "points": [
+      "Dense paragraphs",
+      "5 fonts",
+      "No hierarchy"
+     ]
+    },
+    {
+     "head": "After",
+     "points": [
+      "One idea per slide",
+      "2 fonts, 1 scale",
+      "Clear focal point"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "chart",
+   "title": "Engagement Lift",
+   "kind": "bar",
+   "cats": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+   ],
+   "series": {
+    "Engagement %": [
+     42,
+     55,
+     68,
+     81
+    ]
+   },
+   "insight": "Engagement nearly doubled after the redesign."
+  },
+  {
+   "title": "Next Steps",
+   "points": [
+    "Apply the scored critique before every delivery",
+    "Question: which slide earns the most attention?",
+    "Contact the design lead for the brand kit"
+   ]
+  }
+ ]
+}

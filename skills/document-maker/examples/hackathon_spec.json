@@ -1,0 +1,247 @@
+{
+ "file": "hackathon_proposal",
+ "title": "CodeSprint 2027",
+ "subtitle": "48-Hour National Hackathon Proposal",
+ "author": "Organising Committee",
+ "footer": "CodeSprint 2027 | Confidential",
+ "slides": [
+  {
+   "type": "title",
+   "title": "CodeSprint 2027",
+   "subtitle": "48 hours. 300 builders. One real-world problem each."
+  },
+  {
+   "title": "Problem & Opportunity",
+   "points": [
+    "Students lack real-world, team-based build experience",
+    "Industry needs job-ready talent with proof of work",
+    "A hackathon compresses learning, networking and hiring into 48 hours"
+   ],
+   "notes": "Open with one concrete story."
+  },
+  {
+   "type": "compare",
+   "title": "Why Now",
+   "cols": [
+    {
+     "head": "Today",
+     "points": [
+      "Theory-heavy learning",
+      "Few industry touchpoints",
+      "Portfolios are thin"
+     ]
+    },
+    {
+     "head": "With CodeSprint",
+     "points": [
+      "Build real products in 48 hours",
+      "Mentors from industry",
+      "Demo-ready portfolio pieces"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stats",
+   "title": "Target Impact",
+   "stats": [
+    {
+     "value": "300",
+     "label": "Participants"
+    },
+    {
+     "value": "75",
+     "label": "Teams"
+    },
+    {
+     "value": "12",
+     "label": "Sponsors"
+    },
+    {
+     "value": "3",
+     "label": "Tracks"
+    }
+   ]
+  },
+  {
+   "type": "chart",
+   "title": "Projected Registrations",
+   "kind": "line",
+   "cats": [
+    "Week 1",
+    "Week 2",
+    "Week 3",
+    "Week 4"
+   ],
+   "series": {
+    "Registrations": [
+     40,
+     110,
+     210,
+     320
+    ]
+   },
+   "insight": "Registrations are projected to grow eightfold in four weeks.",
+   "source": "Committee projection from last year's funnel"
+  },
+  {
+   "type": "cards",
+   "title": "Tracks",
+   "cards": [
+    {
+     "head": "AI for Good",
+     "body": "Healthcare, agriculture and accessibility solutions."
+    },
+    {
+     "head": "FinTech",
+     "body": "Inclusion, fraud detection and micro-payments."
+    },
+    {
+     "head": "Smart Campus",
+     "body": "IoT and data tools for sustainable campuses."
+    }
+   ]
+  },
+  {
+   "type": "timeline",
+   "title": "Event Roadmap",
+   "steps": [
+    {
+     "when": "Day -30",
+     "what": "Registrations open"
+    },
+    {
+     "when": "Day 0",
+     "what": "Kick-off and team formation"
+    },
+    {
+     "when": "Day 1",
+     "what": "Mentoring and build sprints"
+    },
+    {
+     "when": "Day 2",
+     "what": "Demos, judging, awards"
+    }
+   ]
+  },
+  {
+   "title": "Next Steps & Contact",
+   "points": [
+    "Approve budget and venue this week",
+    "Confirm sponsors and judges by Day -20",
+    "Launch registration website; contact: team@codesprint.example"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "h": "1. Executive Summary",
+   "p": [
+    "CodeSprint 2027 is a 48-hour national hackathon bringing together 300 student builders to solve real-world problems across three tracks.",
+    "The event runs over a weekend at the main campus, with online participation for remote teams. Each team of three to five members chooses a track, receives mentoring from industry practitioners, and presents a working prototype to a judging panel. Outcomes include open-source repositories, internship conversations with sponsors, and a public showcase that raises the institution's profile among employers and applicants alike."
+   ]
+  },
+  {
+   "h": "2. Objectives",
+   "bullets": [
+    "Deliver hands-on, team-based learning",
+    "Connect talent with industry mentors",
+    "Publish 20+ open-source prototypes"
+   ],
+   "p": [
+    "Objectives are deliberately measurable so that the committee and sponsors can judge success within two weeks of the event, using the metrics below."
+   ]
+  },
+  {
+   "h": "3. Budget",
+   "table": {
+    "head": [
+     "Item",
+     "Cost (INR)",
+     "Notes"
+    ],
+    "rows": [
+     [
+      "Venue and logistics",
+      150000,
+      "2 days"
+     ],
+     [
+      "Prizes",
+      100000,
+      "3 tracks"
+     ],
+     [
+      "Food and swag",
+      120000,
+      "300 pax"
+     ],
+     [
+      "Marketing",
+      40000,
+      "Digital"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "4. Judging Criteria",
+   "table": {
+    "head": [
+     "Criterion",
+     "Weight"
+    ],
+    "rows": [
+     [
+      "Innovation",
+      "25%"
+     ],
+     [
+      "Technical depth",
+      "25%"
+     ],
+     [
+      "Impact",
+      "25%"
+     ],
+     [
+      "Demo and pitch",
+      "25%"
+     ]
+    ]
+   }
+  }
+ ],
+ "tables": [
+  {
+   "name": "Budget",
+   "head": [
+    "Item",
+    "Cost (INR)",
+    "Notes"
+   ],
+   "rows": [
+    [
+     "Venue and logistics",
+     150000,
+     "2 days"
+    ],
+    [
+     "Prizes",
+     100000,
+     "3 tracks"
+    ],
+    [
+     "Food and swag",
+     120000,
+     "300 pax"
+    ],
+    [
+     "Marketing",
+     40000,
+     "Digital"
+    ]
+   ]
+  }
+ ]
+}
