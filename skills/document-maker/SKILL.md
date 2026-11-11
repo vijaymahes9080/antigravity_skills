@@ -24,6 +24,47 @@ slash_commands:
 
 ---
 
+## 0. 🌤 Global Design Directive — Light Theme Always
+
+> **MANDATORY — Non-negotiable. Applies to every format, every engine, every archetype.**
+
+**All documents, presentations, spreadsheets, HTML pages, and SVG diagrams produced by this skill MUST use a light-background theme at all times.**
+
+### Rules — enforced before any file is written:
+
+| Constraint | Requirement |
+|---|---|
+| **Slide / page backgrounds** | White `#FFFFFF` or near-white (≥ `#F5F5F5`). No dark, black, or heavily saturated backgrounds. |
+| **Body text** | Dark on light only — `#111827` / `#1F2937` / `#374151` on white/light surfaces. |
+| **Accent & heading colour** | Any archetype accent colour is used **only** for headings, borders, and highlights — never as a full-slide or full-page fill. |
+| **Colour presets (docgen.py)** | The `light` token from every preset (`#F5F7FA` and similar) is the **background**. Primary colour is text/accent only. |
+| **HTML engine** | Light mode is locked — the dark-mode CSS toggle is disabled. `background: var(--bg)` resolves to white/off-white. |
+| **SVG diagrams** | Node fills use `#FFFFFF` / `#F8FAFC`. Strokes use accent. No dark fills. |
+| **Charts / XLSX** | Chart plot areas white. Cell backgrounds white or `#F8F9FA`. Accent for headers only. |
+| **Academic / lab records** | Plain white A4 background, black text — no coloured fills. |
+
+### Quick palette mapping (light-locked):
+
+```
+Slide background  →  #FFFFFF  or preset.light (#F5F7FA, #F0F7F7 …)
+Page background   →  #FFFFFF  or #FAFAFA
+Heading text      →  preset.primary  (dark colour: navy, forest, plum …)
+Body text         →  #1F2937  (dark slate on white)
+Accent / borders  →  preset.accent   (amber, teal, red …)
+Table header fill →  preset.primary  at 10–15% opacity  (#0F274712 … )
+Callout fill      →  preset.light    tinted  (#EFF4FF, #FEF6F6 …)
+```
+
+### Enforcement checklist (auto-run at Stage 6 — Design Intelligence):
+
+- [ ] No slide/page background hex darker than `#F5F5F5`
+- [ ] Text contrast ratio ≥ 4.5:1 against background (WCAG AA)
+- [ ] No `technology_futuristic` or any archetype dark-background variant used without override to light
+- [ ] HTML `<body>` background ≥ `#F8F8F8`
+- [ ] If user explicitly requests dark theme — acknowledge, then apply light theme and explain the global directive
+
+---
+
 ## 1. Role & Operating Identity
 
 Act as a **Principal Document Automation Architect, Publication Designer, Presentation Art Director, Technical Writer, and Visual QA Specialist** rolled into one.
@@ -155,7 +196,7 @@ USER INPUT
  5. FORMAT SELECTION ────────► Match purpose to native editable format
    │
    ▼
- 6. DESIGN INTELLIGENCE ─────► Select archetype + palette + typography grid
+ 6. DESIGN INTELLIGENCE ─────► Select archetype + palette + typography grid + **enforce light background (§0)**
    │
    ▼
  7. SCRIPT EXECUTION ────────► Run engine_docgen.py or format-specific engines
@@ -196,7 +237,7 @@ USER INPUT
 | XLSX `.xlsx` | `engine_docgen.py` / `engine_xlsx.py` | Live formulas, freeze panes, named ranges, charts, formula injection guard |
 | PDF `.pdf` | `engine_docgen.py` / `engine_pdf.py` | ReportLab Platypus, two-pass "Page X of Y", bookmarks, metadata |
 | RTF `.rtf` | `engine_rtf.py` | stdlib only (no pip), RTF 1.9, Word/LibreOffice/TextEdit compatible |
-| HTML `.html` | `engine_html.py` | Self-contained, CSS variables, dark/light toggle, print @media |
+| HTML `.html` | `engine_html.py` | Self-contained, CSS variables, **light theme locked** (dark toggle disabled), print @media |
 | SVG `.svg` | `engine_svg.py` | Architecture diagrams, pipeline topology, scalable vector |
 
 Full capability comparison → `references/format_matrix.md`
@@ -204,6 +245,8 @@ Full capability comparison → `references/format_matrix.md`
 ---
 
 ## 7. 12 Visual Design Archetypes (Path B)
+
+> **Light Theme Rule**: All archetypes below use their listed colours as **text/accent only** on a white/near-white background. Dark-background variants (e.g., `technology_futuristic`, `luxury_hospitality`) are automatically overridden to light-background per the **Section 0** directive.
 
 | # | Key | Best For | Primary / Accent |
 |---|---|---|---|
